@@ -6,7 +6,6 @@ import (
 	"strconv"
 )
 
-// GET and POST handler for /user
 func UserHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 

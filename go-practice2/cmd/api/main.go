@@ -11,7 +11,6 @@ import (
 func main() {
 	mux := http.NewServeMux()
 
-	// routes
 	mux.Handle("/user", middleware.Auth(http.HandlerFunc(handler.UserHandler)))
 
 	log.Println("Starting server on :8080")
